@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('categories', function (Blueprint $table) {
+            $table->dropColumn('category_name');
             $table->string('category_name')->nullable()->after('id'); // Menambahkan kolom 'category_name'
         });
     }

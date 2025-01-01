@@ -28,6 +28,13 @@
         color: white;
       }
 
+      input[type='search']
+      {
+        width: 500px;
+        height: 60px;
+        margin-left: 50px;
+      }
+
       /* Pagination Styling */
       .pagination-wrapper {
         display: flex;
@@ -54,6 +61,12 @@
     <div class="page-content">
       <div class="page-header">
         <div class="container-fluid">
+
+          <form action="{{ url('product_search') }}" method="get">
+            @csrf
+            <input type="search" name="search">
+            <input type="submit" class="btn btn-secondary" value="Search">
+          </form>
           <div class="div_deg">
             <table class="table_deg">
               <tr>
@@ -63,7 +76,9 @@
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Image</th>
+                <th>Edit</th>
                 <th>Delete</th>
+                
               </tr>
 
               @foreach ($product as $products)
@@ -75,6 +90,9 @@
                 <td>{{ $products->quantity }}</td>
                 <td>
                   <img height="120" width="120" src="products/{{$products->image}}">
+                </td>
+                <td>
+                  <a class="btn btn-success" href="{{ url('update_product', $products->id) }}">Edit</a>
                 </td>
                 <td>
                   <a class="btn btn-danger" onclick="confirmation(event)" href="{{ url('delete_product', $products->id) }}">Delete</a> 

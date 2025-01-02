@@ -12,15 +12,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color:rgb(126, 134, 101);">
           <ul class="navbar-nav  ">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{url('/')}}" style="color: black;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">
+              <a class="nav-link" href="{{url('shop')}}">
                 Shop
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="why.html">
+              <a class="nav-link" href="{{url('why')}}">
                 Why Us
               </a>
             </li>
@@ -35,6 +35,7 @@
           </ul>
           <div class="user_option">
 
+<<<<<<< HEAD
             @if (Route::has('login'))
 
               @auth
@@ -50,6 +51,30 @@
             </form> 
 
             @else
+=======
+          @if (Route::has('login'))
+
+             @auth
+
+             <a href="{{url('myorders')}}">
+              My Orders
+            [{{$count}}]
+          </a>
+
+             <a href="{{url('mycart')}}">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            [{{$count}}]
+          </a>
+            
+
+             <form style="padding: 15px" method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <input class="btn btn-success" type="submit" value="logout">
+              </form>
+
+              @else
+>>>>>>> a89f420 (Ladiva final)
 
             <a href="{{url('/login')}}">
               <i class="fa fa-user" aria-hidden="true"></i>
@@ -70,8 +95,11 @@
           @endif
 
             
+<<<<<<< HEAD
 
             
+=======
+>>>>>>> a89f420 (Ladiva final)
           </div>
         </div>
       </nav>

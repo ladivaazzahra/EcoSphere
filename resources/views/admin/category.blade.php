@@ -70,6 +70,7 @@
                 <th>Delete</th>
               </tr>
 
+<<<<<<< HEAD
               @foreach($data as $category)
               <tr>
                 <td>{{$category->category_name}}</td>
@@ -81,6 +82,28 @@
                 </td>
               </tr>
               @endforeach
+=======
+                    <th>Edit</th>
+
+                    <th>Delete</th>
+                </tr>
+
+                @foreach($data as $data)
+
+                <tr>
+                    <td>{{$data->category_name}}</td>
+
+                    <td>
+                        <a class="btn btn-success" href="{{url('edit_category',$data->id)}}">Edit</a>
+                    </td>
+
+                    <td>
+                        <a class="btn btn-danger" onclick="confirmation(event)" href="{{url('delete_category',$data->id)}}">Delete</a>
+                    </td>
+                </tr>
+
+                @endforeach
+>>>>>>> a89f420 (Ladiva final)
             </table>        
           </div>
 

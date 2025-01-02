@@ -7,11 +7,11 @@
                 <div class="row">
                   <div class="col-md-7">
                     <div class="detail-box"> 
-                      <h1>
+                      <h1 style="color: rgb(126, 134, 101); font-size: 120px">
                         Let's Save <br>
                         The World!
                       </h1>
-                      <p>
+                      <p style="color: rgb(126, 134, 101); font-size: 25px">
                       Browse our curated collection of eco-friendly products, <br>
                       thoughtfully designed to align with your values and celebrate your unique taste.
                       </p>
@@ -22,7 +22,7 @@
                   </div>
                   <div class="col-md-5 ">
                     <div class="img-box" >
-                      <img style="width:500px" src="images/image4.jpg" alt="" />
+                      <img style="width:500px; border-radius: 15px;" src="images/image4.jpg" alt="" />
                     </div>
                   </div>
                 </div>

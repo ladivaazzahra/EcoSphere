@@ -20,6 +20,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+<<<<<<< HEAD
         Paginator::useBootstrap();
+=======
+       //
+>>>>>>> a89f420 (Ladiva final)
     }
 }

@@ -1,4 +1,4 @@
-<section class="info_section  layout_padding2-top">
+<section class="info_section  layout_padding2-top" style="background-color: rgb(126, 134, 101);">
     <div class="social_container">
       <div class="social_box">
         <a href="">
@@ -23,7 +23,7 @@
               ABOUT US
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+            Ecosphere adalah platform belanja online produk ramah lingkungan yang berkomitmen mendukung keberlanjutan. Kami menyediakan produk berkualitas tinggi dengan pengemasan ramah lingkungan dan pengiriman bebas polusi. Bersama, kita bisa menciptakan masa depan yang lebih hijau.
             </p>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -33,7 +33,7 @@
               </h5>
               <form action="#">
                 <input type="email" placeholder="Enter your email">
-                <button>
+                <button style="background-color: #997c70;">
                   Subscribe
                 </button>
               </form>
@@ -44,7 +44,7 @@
               NEED HELP
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+            Butuh bantuan? Tim kami siap membantu Anda! Hubungi kami untuk pertanyaan seputar produk, pengiriman, atau informasi lainnya. Mari bersama menjaga bumi dengan belanja ramah lingkungan di Ecosphere.
             </p>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -54,15 +54,15 @@
             <div class="info_link-box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span> Gb road 123 london Uk </span>
+                <span> Jl. Telekomunikasi No. 1, Bandung </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>+01 12345678901</span>
+                <span>0812345678821</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span> demo@gmail.com</span>
+                <span> ecosphere@gmail.com </span>
               </a>
             </div>
           </div>
@@ -70,7 +70,7 @@
       </div>
     </div>
     <!-- footer section -->
-    <footer class=" footer_section">
+    <footer class=" footer_section" style="background-color: rgb(126, 134, 101);">
       <div class="container">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
